@@ -1,0 +1,49 @@
+.map-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to top, #030615, rgba(255, 255, 255, 0)); */
+  background-image: url("/public/landing_image.webp");
+}
+
+.levelHolder {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.level-img-container {
+  padding: 0.5rem;
+  margin: 2rem;
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  border-color: 2px solid white;
+}
+
+.level-img-container:hover {
+  box-shadow: 1rem 1rem 1rem white;
+}
+
+.level-images {
+  width: 100%; /* Scale to fill the container */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: contain;
+  border-radius: 1rem;
+  opacity: 1;
+}
+
+.level-images-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.level-img-container img {
+  overflow: hidden;
+}
